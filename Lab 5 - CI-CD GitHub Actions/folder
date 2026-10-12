@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Skill Gap Analysis</title>
+</head>
+<body>
+    <h1>CSE Skill Gap Analysis</h1>
+    <p>AI-based student skill gap identification using Machine Learning.</p>
+    <h2>CI/CD Pipeline</h2>
+    <p>GitHub Actions automatically tests the ML code before deploying this website.</p>
+</body>
+</html>
