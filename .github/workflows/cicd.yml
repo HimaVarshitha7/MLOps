@@ -19,7 +19,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: Lab 5 - CI-CD GitHub Actions
+        working-directory: "Lab 5 - CI-CD GitHub Actions"
 
     steps:
       - name: Checkout repository
@@ -37,7 +37,7 @@ jobs:
         run: pytest -v
 
       - name: Train machine learning model
-        run: run: python train_model.py --data CSE_Skill_Gap_Dataset_1000.csv
+        run: python train_model.py --data CSE_Skill_Gap_Dataset_1000.csv
 
   cd:
     name: CD - Deploy Website
@@ -58,7 +58,7 @@ jobs:
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: Lab 5 - CI-CD GitHub Actions/site
+          path: "Lab 5 - CI-CD GitHub Actions/site"
 
       - name: Deploy website
         id: deployment
