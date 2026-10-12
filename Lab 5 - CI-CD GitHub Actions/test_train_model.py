@@ -9,16 +9,25 @@ from train_model import (
 )
 
 
+
 def make_sample_data():
     data = {
-        feature: [20, 40, 60, 80, 90, 50, 30, 70, 85, 45]
+        feature: [
+            20, 40, 60, 80, 90, 50, 30, 70, 85, 45,
+            25, 55, 65, 75, 35, 95, 15, 48, 68, 88
+        ]
         for feature in FEATURES
     }
+
     data[TARGET] = [
         "Low", "Low", "Medium", "High", "High",
-        "Medium", "Low", "High", "High", "Medium"
+        "Medium", "Low", "High", "High", "Medium",
+        "Low", "Medium", "Medium", "High", "Low",
+        "High", "Low", "Medium", "Medium", "High"
     ]
+
     return pd.DataFrame(data)
+
 
 
 def test_missing_column(tmp_path):
