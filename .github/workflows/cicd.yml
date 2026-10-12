@@ -37,7 +37,7 @@ jobs:
         run: pytest -v
 
       - name: Train machine learning model
-        run: python train_model.py --data cse_skill_gap.csv
+        run: run: python train_model.py --data CSE_Skill_Gap_Dataset_1000.csv
 
   cd:
     name: CD - Deploy Website
